@@ -1,74 +1,37 @@
-# TPA PDF Processing Pipeline - Next.js Web App
+Disease: Oncology / "oncology" / priority 3
+Keywords: cancer, tumor, malignant, carcinoma, chemo, chemotherapy, radiation, 
+          biopsy, oncology, neoplasm, metastasis, mastectomy, lumpectomy, ...
 
-A web-based PDF processing pipeline for extracting structured data from hospital bills using AI models.
+Admissibility rules:
+- Pre-existing cancer waiting period: 4 years (rejection: "Pre-existing cancer 
+  requires 4 years continuous coverage")
+- Cosmetic reconstruction excluded: if diagnosis includes "reconstruction" and 
+  is post-mastectomy beyond 6 months
+- ... etc
 
-## Features
+AI extraction:
+- cancerStage (I/II/III/IV)
+- tumorType
+- treatmentLine (1st/2nd/3rd line)
+- isMetastatic (boolean)
 
-- **Web-based UI**: Modern interface built with Next.js and shadcn/ui
-- **Real-time Progress**: Live updates on processing status
-- **Multiple AI Providers**: Support for OpenAI and OpenRouter
-- **Fallback Retry**: Automatic retry with fallback models on validation failures
-- **Export Results**: Download results as JSON
+TPA mappings:
+- Chemotherapy / IDs around 700-710 / catchAll 700
+- Radiation therapy / IDs 720-725 / catchAll 720
+- Biopsy / ID 730
+- Surgery (lumpectomy/mastectomy) / IDs 740-745
+...
 
-## Setup
+Coding row:
+- BillingType: 201 (bill + package, like cataract)
+- TreatmentType: 66 (mostly surgical) — except for chemo which is medical (67)
+                 — handle this how?
+- DefaultFacilityId: null
+- PackageRateNull: false
 
-1. Install dependencies :
-
-```bash
-bun install
-```
-
-2. Set up environment variables in `.env.local`:
-
-```env
-# Required based on your provider choice
-OPENROUTER_API_KEY=your-key-here
-# OR
-OPENAI_API_KEY=your-key-here
-```
-
-3. Run the development server:
-
-```bash
-bun run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Usage
-
-1. **Configure Settings**:
-   - Enter the PDF directory path (server-side path)
-   - Select your AI model name (e.g., `google/gemini-3-flash-preview`)
-   - Choose your provider (OpenAI or OpenRouter)
-   - Optionally configure fallback model and retry count
-
-2. **Start Processing**:
-   - Click "Start Processing" to begin
-   - Watch real-time progress updates
-   - View file-by-file status and statistics
-
-3. **Download Results**:
-   - Once processing completes, download results as JSON
-   - Results include extracted data, validation results, and statistics
-
-## API Endpoints
-
-- `POST /api/process` - Start processing PDFs
-- `GET /api/status` - Get current processing status
-- `GET /api/download?format=json` - Download results
-
-## Architecture
-
-- **Frontend**: Next.js 16 with React Server Components
-- **UI Components**: shadcn/ui
-- **Backend**: Next.js API Routes
-- **Processing**: Server-side processing with progress tracking
-- **State Management**: In-memory processing service
-
-## Notes
-
-- PDF directory must be accessible from the server
-- Processing runs asynchronously - status is polled every second
-- Results are stored in memory until download
-
+UI:
+- showInadmissibilityFlags: yes
+- showGPLA: no
+- filterAilmentCappings: yes
+- showEyeFields: no
+- Anything else? Maybe a "stage selector" widget — TBD
