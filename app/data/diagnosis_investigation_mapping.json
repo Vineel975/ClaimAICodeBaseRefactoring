@@ -1,0 +1,1710 @@
+[
+  {
+    "diagnosis": "acl and pcl tear",
+    "required_investigations": [
+      {
+        "id": 70,
+        "name": "MRI"
+      }
+    ]
+  },
+  {
+    "diagnosis": "acl tear",
+    "required_investigations": [
+      {
+        "id": 70,
+        "name": "MRI"
+      }
+    ]
+  },
+  {
+    "diagnosis": "acute glomerulo nephritis",
+    "required_investigations": [
+      {
+        "id": 1,
+        "name": "CAG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 232,
+        "name": "Prothrombin Time"
+      }
+    ]
+  },
+  {
+    "diagnosis": "acute renal failure",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 27,
+        "name": "LFT"
+      },
+      {
+        "id": 38,
+        "name": "Renal Profile"
+      },
+      {
+        "id": 100,
+        "name": "CUE"
+      },
+      {
+        "id": 136,
+        "name": "Blood Culture & Sensitivity - Automated"
+      },
+      {
+        "id": 137,
+        "name": "Arterial Blood Gas Analysis (ABG)"
+      },
+      {
+        "id": 141,
+        "name": "ECG (Electro Cardiogram)"
+      },
+      {
+        "id": 155,
+        "name": "Complete Blood Picture [CBP]"
+      },
+      {
+        "id": 335,
+        "name": "Serum Bicarbonate Levels"
+      }
+    ]
+  },
+  {
+    "diagnosis": "adenoids",
+    "required_investigations": [
+      {
+        "id": 12,
+        "name": "X-Ray Nasopharynx"
+      }
+    ]
+  },
+  {
+    "diagnosis": "adenotonsillitis",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "aortic valve stenosis",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "appendicitis",
+    "required_investigations": [
+      {
+        "id": 29,
+        "name": "X-Ray erect abdomen"
+      },
+      {
+        "id": 75,
+        "name": "ESR"
+      },
+      {
+        "id": 76,
+        "name": "USG/CT"
+      },
+      {
+        "id": 297,
+        "name": "CRP"
+      }
+    ]
+  },
+  {
+    "diagnosis": "atrial and ventricular septal defects",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "atrial fibrillation",
+    "required_investigations": [
+      {
+        "id": 1,
+        "name": "CAG"
+      },
+      {
+        "id": 2,
+        "name": "ECG"
+      },
+      {
+        "id": 4,
+        "name": "Doppler"
+      }
+    ]
+  },
+  {
+    "diagnosis": "atrial septal defect",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "bartholin cyst",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "benign prostatic hyperplasia",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 41,
+        "name": "Cystoscopy"
+      },
+      {
+        "id": 82,
+        "name": "CT Abdomen with contast (KUB)"
+      },
+      {
+        "id": 126,
+        "name": "Cystoureteroscopy"
+      },
+      {
+        "id": 131,
+        "name": "PSA"
+      },
+      {
+        "id": 132,
+        "name": "Uroflometry"
+      },
+      {
+        "id": 241,
+        "name": "Sputum Culture & Sensitivity"
+      },
+      {
+        "id": 248,
+        "name": "C-Reactive Protein"
+      }
+    ]
+  },
+  {
+    "diagnosis": "bladder tumour",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 41,
+        "name": "Cystoscopy"
+      },
+      {
+        "id": 82,
+        "name": "CT Abdomen with contast (KUB)"
+      },
+      {
+        "id": 126,
+        "name": "Cystoureteroscopy"
+      },
+      {
+        "id": 131,
+        "name": "PSA"
+      }
+    ]
+  },
+  {
+    "diagnosis": "burns",
+    "required_investigations": [
+      {
+        "id": 37,
+        "name": "Pictorial Presentation"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca bladder",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca breast",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 105,
+        "name": "Mammogram"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca cervix and uterus",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 106,
+        "name": "CT Scan of Lower Abdomen"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca gallbladder",
+    "required_investigations": [
+      {
+        "id": 131,
+        "name": "PSA"
+      },
+      {
+        "id": 202,
+        "name": "Serum Bilirubin Levels"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca kidney",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca large intestine",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca liver",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca lung",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      },
+      {
+        "id": 21,
+        "name": "Bronchoscopy"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 104,
+        "name": "CT Chest"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca oesophagus",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca ovary",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 106,
+        "name": "CT Scan of Lower Abdomen"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca pancreas",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca prostate",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca rectum",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca small intestine",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca stomach",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ca toungue",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "calcaneal fracture",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "carpel tunnel syndrome",
+    "required_investigations": [
+      {
+        "id": 71,
+        "name": "Clinial Notes"
+      }
+    ]
+  },
+  {
+    "diagnosis": "cataract",
+    "required_investigations": [
+      {
+        "id": 68,
+        "name": "B-Scan"
+      },
+      {
+        "id": 102,
+        "name": "Fundus Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "cbd stone",
+    "required_investigations": [
+      {
+        "id": 26,
+        "name": "Endoscopy photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "cerebral aneurysm",
+    "required_investigations": [
+      {
+        "id": 52,
+        "name": "CT Angio Of Brain(Head)"
+      }
+    ]
+  },
+  {
+    "diagnosis": "cholelithiasis",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 27,
+        "name": "LFT"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "chronic kidney disease - ckd",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 27,
+        "name": "LFT"
+      },
+      {
+        "id": 38,
+        "name": "Renal Profile"
+      },
+      {
+        "id": 100,
+        "name": "CUE"
+      },
+      {
+        "id": 155,
+        "name": "Complete Blood Picture [CBP]"
+      }
+    ]
+  },
+  {
+    "diagnosis": "chronic liver disease",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 65,
+        "name": "CT"
+      }
+    ]
+  },
+  {
+    "diagnosis": "chronic renal failure",
+    "required_investigations": [
+      {
+        "id": 4,
+        "name": "Doppler"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 38,
+        "name": "Renal Profile"
+      },
+      {
+        "id": 79,
+        "name": "Hb%"
+      },
+      {
+        "id": 124,
+        "name": "HLA Typing"
+      }
+    ]
+  },
+  {
+    "diagnosis": "coronary artery disease",
+    "required_investigations": [
+      {
+        "id": 1,
+        "name": "CAG"
+      },
+      {
+        "id": 2,
+        "name": "ECG"
+      },
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "csom",
+    "required_investigations": [
+      {
+        "id": 8,
+        "name": "Impedance Audiometry"
+      },
+      {
+        "id": 9,
+        "name": "PTA"
+      },
+      {
+        "id": 10,
+        "name": "CT Temporal Bone"
+      },
+      {
+        "id": 72,
+        "name": "X-Ray Mastoids"
+      }
+    ]
+  },
+  {
+    "diagnosis": "cystitis",
+    "required_investigations": [
+      {
+        "id": 1,
+        "name": "CAG"
+      },
+      {
+        "id": 100,
+        "name": "CUE"
+      },
+      {
+        "id": 352,
+        "name": "Bones & Joints"
+      },
+      {
+        "id": 438,
+        "name": "Bilirubin"
+      }
+    ]
+  },
+  {
+    "diagnosis": "cystocele",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "dacryocystitis",
+    "required_investigations": [
+      {
+        "id": 17,
+        "name": "Dacrocystography"
+      }
+    ]
+  },
+  {
+    "diagnosis": "dislocations shoulder joint",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      },
+      {
+        "id": 70,
+        "name": "MRI"
+      }
+    ]
+  },
+  {
+    "diagnosis": "dns",
+    "required_investigations": [
+      {
+        "id": 12,
+        "name": "X-Ray Nasopharynx"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ectopic prgnancy",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      }
+    ]
+  },
+  {
+    "diagnosis": "epigastric hernia",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      }
+    ]
+  },
+  {
+    "diagnosis": "facial bone fracture -left",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "facial bone fracture -right",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "femoral hernia",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fibroid uterus",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fissure in ano",
+    "required_investigations": [
+      {
+        "id": 32,
+        "name": "Proctoscopy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fistula in ano",
+    "required_investigations": [
+      {
+        "id": 34,
+        "name": "Lower GI Endoscopy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "foot fracute",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture both bones forearm",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture forearm single bone",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture mandible -left",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture mandible -right",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture neck femur",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture patella",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture pelvis",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture shaft femur",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture small bones of hand",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "fracture tibia",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ganglion",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "glaucoma",
+    "required_investigations": [
+      {
+        "id": 68,
+        "name": "B-Scan"
+      },
+      {
+        "id": 102,
+        "name": "Fundus Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "haemorroids",
+    "required_investigations": [
+      {
+        "id": 32,
+        "name": "Proctoscopy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "hiatus hernia",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 74,
+        "name": "X-Ray Chest"
+      }
+    ]
+  },
+  {
+    "diagnosis": "high myopia",
+    "required_investigations": [
+      {
+        "id": 69,
+        "name": "Optometry"
+      }
+    ]
+  },
+  {
+    "diagnosis": "hydrocele",
+    "required_investigations": [
+      {
+        "id": 35,
+        "name": "USG Scrotum"
+      }
+    ]
+  },
+  {
+    "diagnosis": "hydrocephalus",
+    "required_investigations": [
+      {
+        "id": 5,
+        "name": "Dental X-Ray"
+      },
+      {
+        "id": 50,
+        "name": "CT Scan Head Without Contrast"
+      },
+      {
+        "id": 91,
+        "name": "CT Angio Of Brain(Head) /MRI Brain Without Contrast / Neurosonogram(NSG)"
+      },
+      {
+        "id": 113,
+        "name": "X Ray scull"
+      },
+      {
+        "id": 190,
+        "name": "Upper GI endoscopy /Barium Meal Follow Through"
+      }
+    ]
+  },
+  {
+    "diagnosis": "incisional hernia",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "inguinal hernia",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      }
+    ]
+  },
+  {
+    "diagnosis": "lump in breast",
+    "required_investigations": [
+      {
+        "id": 2,
+        "name": "ECG"
+      },
+      {
+        "id": 108,
+        "name": "FNAC"
+      },
+      {
+        "id": 325,
+        "name": "CT-Scan Brain Plain And Contrast / MRI Brain With Contrast"
+      }
+    ]
+  },
+  {
+    "diagnosis": "macular degeneration",
+    "required_investigations": [
+      {
+        "id": 68,
+        "name": "B-Scan"
+      },
+      {
+        "id": 102,
+        "name": "Fundus Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "mcl tear",
+    "required_investigations": [
+      {
+        "id": 70,
+        "name": "MRI"
+      }
+    ]
+  },
+  {
+    "diagnosis": "mitral and the aortic valve",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "mitral valve stenosis",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "nasal polyp",
+    "required_investigations": [
+      {
+        "id": 14,
+        "name": "Nasal Endoscopy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "nephrolithiasis-conservative management",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 81,
+        "name": "IVP"
+      },
+      {
+        "id": 109,
+        "name": "CT Abdomen"
+      }
+    ]
+  },
+  {
+    "diagnosis": "nephrotic syndrome",
+    "required_investigations": [
+      {
+        "id": 14,
+        "name": "Nasal Endoscopy"
+      },
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 200,
+        "name": "Sigmoidoscopy (REGID) /Colono Scopy"
+      },
+      {
+        "id": 310,
+        "name": "Liver Biopsy (Major)"
+      },
+      {
+        "id": 423,
+        "name": "Dexa Scan (Hip & Spine / Heel) (Bone Scan)"
+      }
+    ]
+  },
+  {
+    "diagnosis": "osteoarthritis hip",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      },
+      {
+        "id": 70,
+        "name": "MRI"
+      }
+    ]
+  },
+  {
+    "diagnosis": "osteoarthritis knee",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      },
+      {
+        "id": 70,
+        "name": "MRI"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ovarian cyst",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "patent ductus arteriosus",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "pcod",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "perianal abcess",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "peritonsillar abcess",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "pilonidal sinus",
+    "required_investigations": [
+      {
+        "id": 33,
+        "name": "Sinogram"
+      }
+    ]
+  },
+  {
+    "diagnosis": "pivd",
+    "required_investigations": [
+      {
+        "id": 6,
+        "name": "IOPA"
+      },
+      {
+        "id": 46,
+        "name": "Nerve Conduction Study"
+      },
+      {
+        "id": 53,
+        "name": "MRI Spine at that level"
+      },
+      {
+        "id": 54,
+        "name": "CT Spine Cervical Without Contrast /MRI Local Area"
+      },
+      {
+        "id": 55,
+        "name": "CT Spine Dorsal Without Contrast /MRI Local Area"
+      },
+      {
+        "id": 56,
+        "name": "CT Spine Lumbar Without Contrast /MRI Local Area"
+      },
+      {
+        "id": 57,
+        "name": "CT Spine Cervical Without Contrast/ MRI Cervical spine"
+      },
+      {
+        "id": 58,
+        "name": "CT Spine Dorsal Without Contrast/ MRI Dorsal spine"
+      },
+      {
+        "id": 59,
+        "name": "CT Spine Lumbar Without Contrast/ MRI Lumbarspine"
+      },
+      {
+        "id": 60,
+        "name": "CT Spine Dorsal Without Contrast/ MRI Thorasic spine"
+      },
+      {
+        "id": 92,
+        "name": "X-Ray Dorso Lumbar Spine"
+      },
+      {
+        "id": 94,
+        "name": "ENMG (Elektroneuromyography)"
+      },
+      {
+        "id": 127,
+        "name": "Sacral) Without Contrast /MRI Spine"
+      },
+      {
+        "id": 133,
+        "name": "MRI Spine"
+      },
+      {
+        "id": 392,
+        "name": "Pleural Biopsy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "polyp uterus",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "post-burn contractures",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "prolapse of rectal mass",
+    "required_investigations": [
+      {
+        "id": 32,
+        "name": "Proctoscopy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "prostate tumour",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 41,
+        "name": "Cystoscopy"
+      },
+      {
+        "id": 82,
+        "name": "CT Abdomen with contast (KUB)"
+      }
+    ]
+  },
+  {
+    "diagnosis": "pterygium",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "pulmonary stenosis",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "pyelonephritis",
+    "required_investigations": [
+      {
+        "id": 1,
+        "name": "CAG"
+      },
+      {
+        "id": 92,
+        "name": "X-Ray Dorso Lumbar Spine"
+      },
+      {
+        "id": 100,
+        "name": "CUE"
+      },
+      {
+        "id": 352,
+        "name": "Bones & Joints"
+      },
+      {
+        "id": 438,
+        "name": "Bilirubin"
+      }
+    ]
+  },
+  {
+    "diagnosis": "renal calculus",
+    "required_investigations": [
+      {
+        "id": 4,
+        "name": "Doppler"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 40,
+        "name": "KUB"
+      },
+      {
+        "id": 110,
+        "name": "IVP/CT Abdomen"
+      }
+    ]
+  },
+  {
+    "diagnosis": "retinal detachment",
+    "required_investigations": [
+      {
+        "id": 68,
+        "name": "B-Scan"
+      },
+      {
+        "id": 102,
+        "name": "Fundus Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "scaphoid fractures",
+    "required_investigations": [
+      {
+        "id": 7,
+        "name": "X-Ray"
+      }
+    ]
+  },
+  {
+    "diagnosis": "sinusitis",
+    "required_investigations": [
+      {
+        "id": 15,
+        "name": "CT PNS"
+      }
+    ]
+  },
+  {
+    "diagnosis": "sinusitis, dns and turbinate hypertrophy",
+    "required_investigations": [
+      {
+        "id": 15,
+        "name": "CT PNS"
+      }
+    ]
+  },
+  {
+    "diagnosis": "squint",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "subacute intestinal obstruction",
+    "required_investigations": [
+      {
+        "id": 20,
+        "name": "Endoscopy"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      },
+      {
+        "id": 30,
+        "name": "X-Ray abdomen"
+      },
+      {
+        "id": 31,
+        "name": "Biopsy"
+      },
+      {
+        "id": 66,
+        "name": "CT Scan"
+      },
+      {
+        "id": 77,
+        "name": "CT-Scan"
+      },
+      {
+        "id": 197,
+        "name": "Colono Scopy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "tetralogy of fallot",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "thyroiditis",
+    "required_investigations": [
+      {
+        "id": 22,
+        "name": "TFT"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "tonsillitis",
+    "required_investigations": [
+      {
+        "id": 18,
+        "name": "Clinical Photograph"
+      }
+    ]
+  },
+  {
+    "diagnosis": "tricuspid atresia",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "tricuspid stenosis",
+    "required_investigations": [
+      {
+        "id": 3,
+        "name": "2D ECHO"
+      }
+    ]
+  },
+  {
+    "diagnosis": "turbinate hypertrophy",
+    "required_investigations": [
+      {
+        "id": 13,
+        "name": "Direct Nasal Laryngoscopy"
+      }
+    ]
+  },
+  {
+    "diagnosis": "umbilical hernia",
+    "required_investigations": [
+      {
+        "id": 24,
+        "name": "USG abdomen"
+      },
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "uretero-vaginal fistula",
+    "required_investigations": [
+      {
+        "id": 67,
+        "name": "Fistulogram"
+      }
+    ]
+  },
+  {
+    "diagnosis": "urethral fistula",
+    "required_investigations": [
+      {
+        "id": 42,
+        "name": "Retrograde Urethrogram"
+      }
+    ]
+  },
+  {
+    "diagnosis": "urethral stricture",
+    "required_investigations": [
+      {
+        "id": 42,
+        "name": "Retrograde Urethrogram"
+      },
+      {
+        "id": 80,
+        "name": "CT Abdomen with Contrast"
+      },
+      {
+        "id": 83,
+        "name": "USG Abdomen(KUB)"
+      },
+      {
+        "id": 111,
+        "name": "CT Scan Lower Abdomen with contrast"
+      },
+      {
+        "id": 381,
+        "name": "Serum Levels of poison"
+      },
+      {
+        "id": 428,
+        "name": "24 Hrs Urinary Protein"
+      }
+    ]
+  },
+  {
+    "diagnosis": "urinary incontinence",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "utero-vaginal fistula",
+    "required_investigations": [
+      {
+        "id": 67,
+        "name": "Fistulogram"
+      }
+    ]
+  },
+  {
+    "diagnosis": "uti",
+    "required_investigations": [
+      {
+        "id": 2,
+        "name": "ECG"
+      },
+      {
+        "id": 100,
+        "name": "CUE"
+      },
+      {
+        "id": 155,
+        "name": "Complete Blood Picture [CBP]"
+      },
+      {
+        "id": 235,
+        "name": "Urine Culture & Sensitivity"
+      },
+      {
+        "id": 438,
+        "name": "Bilirubin"
+      }
+    ]
+  },
+  {
+    "diagnosis": "vault prolapse",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "ventral hernia",
+    "required_investigations": [
+      {
+        "id": 25,
+        "name": "USG"
+      }
+    ]
+  },
+  {
+    "diagnosis": "vericose veins",
+    "required_investigations": [
+      {
+        "id": 4,
+        "name": "Doppler"
+      }
+    ]
+  },
+  {
+    "diagnosis": "vesico-vaginal fistula",
+    "required_investigations": [
+      {
+        "id": 67,
+        "name": "Fistulogram"
+      }
+    ]
+  },
+  {
+    "diagnosis": "vitreous hemorrhage",
+    "required_investigations": [
+      {
+        "id": 68,
+        "name": "B-Scan"
+      },
+      {
+        "id": 102,
+        "name": "Fundus Photograph"
+      }
+    ]
+  }
+]

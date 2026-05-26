@@ -1,0 +1,23 @@
+{"parentCategory":"Accommodation Charges","subCategory":"covered","coverage":true}
+{"parentCategory":"Accommodation Charges","subCategory":"percent","coverage":1}
+{"parentCategory":"Accommodation Charges","subCategory":"applyPercentIfSumInsuredLte","coverage":500000}
+{"parentCategory":"ICU Charges","subCategory":"covered","coverage":true}
+{"parentCategory":"ICU Charges","subCategory":"percent","coverage":2}
+{"parentCategory":"ICU Charges","subCategory":"applyPercentIfSumInsuredLte","coverage":500000}
+{"parentCategory":"Room Rent","subCategory":"covered","coverage":true}
+{"parentCategory":"Room Rent","subCategory":"percent","coverage":1}
+{"parentCategory":"Room Rent","subCategory":"applyPercentIfSumInsuredLte","coverage":500000}
+{"parentCategory":"Nursing Charges","subCategory":"covered","coverage":true}
+{"parentCategory":"Nursing Charges","subCategory":"proportionateTo","coverage":"Room Rent"}
+{"parentCategory":"Nursing Charges","subCategory":"proportionateIfSumInsuredLte","coverage":500000}
+{"parentCategory":"Doctor / Surgeon Fees","subCategory":"covered","coverage":true}
+{"parentCategory":"Medicines (Hospital)","subCategory":"covered","coverage":true}
+{"parentCategory":"Medicines (External)","subCategory":"covered","coverage":true}
+{"parentCategory":"Consumables","subCategory":"covered","coverage":true}
+{"parentCategory":"Diagnostics / Imaging","subCategory":"covered","coverage":true}
+{"parentCategory":"Implants","subCategory":"covered","coverage":true}
+{"parentCategory":"Ambulance","subCategory":"covered","coverage":true}
+{"parentCategory":"F & B","subCategory":"covered","coverage":false}
+{"parentCategory":"Telephone","subCategory":"covered","coverage":false}
+{"parentCategory":"Registration / File Charges","subCategory":"covered","coverage":false}
+{"parentCategory":"Service Charges / Tax","subCategory":"covered","coverage":false}

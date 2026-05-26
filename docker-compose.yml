@@ -1,0 +1,175 @@
+services:
+  backend:
+    # Change this to :${REV} if you want to pin to a specific version
+    image: ghcr.io/get-convex/convex-backend:latest
+    stop_grace_period: 10s
+    stop_signal: SIGINT
+    ports:
+      - '127.0.0.1:${CONVEX_BACKEND_PORT:-3210}:3210'
+      - '127.0.0.1:${CONVEX_SITE_PORT:-3211}:3211'
+    networks:
+      default: {}
+      edge:
+        aliases:
+          - claims-backend
+    volumes:
+      - data:/convex/data
+    environment:
+      - ACTIONS_USER_TIMEOUT_SECS
+      - APPLICATION_MAX_CONCURRENT_MUTATIONS=${APPLICATION_MAX_CONCURRENT_MUTATIONS:-16}
+      - APPLICATION_MAX_CONCURRENT_NODE_ACTIONS=${APPLICATION_MAX_CONCURRENT_NODE_ACTIONS:-16}
+      - APPLICATION_MAX_CONCURRENT_QUERIES=${APPLICATION_MAX_CONCURRENT_QUERIES:-16}
+      - APPLICATION_MAX_CONCURRENT_V8_ACTIONS=${APPLICATION_MAX_CONCURRENT_V8_ACTIONS:-16}
+      - AWS_ACCESS_KEY_ID
+      - AWS_REGION
+      - AWS_S3_DISABLE_CHECKSUMS
+      - AWS_S3_DISABLE_SSE
+      - AWS_S3_FORCE_PATH_STYLE
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_SESSION_TOKEN
+      - CONVEX_CLOUD_ORIGIN=${CONVEX_CLOUD_ORIGIN:-http://127.0.0.1:3210}
+      - CONVEX_AUTH_ORIGIN=${CONVEX_AUTH_ORIGIN:-}
+      - CONVEX_RELEASE_VERSION_DEV
+      - CONVEX_SITE_ORIGIN=${CONVEX_SITE_ORIGIN:-http://127.0.0.1:3211}
+      - DATABASE_URL=
+      - DISABLE_BEACON
+      - DISABLE_METRICS_ENDPOINT=${DISABLE_METRICS_ENDPOINT:-true} # Enable if you want prometheus compatible /metrics endpoint
+      - DOCUMENT_RETENTION_DELAY=${DOCUMENT_RETENTION_DELAY:-172800} # Lower default document retention to 2 days
+      - DO_NOT_REQUIRE_SSL=1
+      - HTTP_SERVER_TIMEOUT_SECONDS
+      - INSTANCE_NAME
+      - INSTANCE_SECRET
+      - MYSQL_URL=
+      - POSTGRES_URL=${CONVEX_POSTGRES_URL:-}
+      - REDACT_LOGS_TO_CLIENT
+      - RUST_BACKTRACE
+      - RUST_LOG=${RUST_LOG:-info}
+      - S3_ENDPOINT_URL
+      - S3_STORAGE_EXPORTS_BUCKET
+      - S3_STORAGE_FILES_BUCKET
+      - S3_STORAGE_MODULES_BUCKET
+      - S3_STORAGE_SEARCH_BUCKET
+      - S3_STORAGE_SNAPSHOT_IMPORTS_BUCKET
+
+    depends_on:
+      - postgres
+
+    healthcheck:
+      test: curl -f http://localhost:3210/version
+      interval: 5s
+      start_period: 10s
+
+  dashboard:
+    # Change this to :${REV} if you want to pin to a specific version
+    image: ghcr.io/get-convex/convex-dashboard:latest
+    stop_grace_period: 10s
+    stop_signal: SIGINT
+    ports:
+      - '127.0.0.1:${DASHBOARD_PORT:-6791}:6791'
+    depends_on:
+      - backend
+
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=${CONVEX_POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${CONVEX_POSTGRES_PASSWORD:-postgres}
+      # Convex self-host uses database name derived from instance (e.g. convex_self_hosted).
+      - POSTGRES_DB=${CONVEX_POSTGRES_DB:-convex_self_hosted}
+    ports:
+      - '127.0.0.1:${CONVEX_POSTGRES_PORT:-6543}:5432'
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      # `template1` always exists; avoids failing when POSTGRES_DB is not named `postgres`.
+      test:
+        [
+          'CMD-SHELL',
+          'pg_isready -U ${CONVEX_POSTGRES_USER:-postgres} -d template1',
+        ]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+      start_period: 5s
+    restart: unless-stopped
+
+  web:
+    image: ${NEXT_IMAGE:-claim-processing-local}
+    build:
+      context: .
+      dockerfile: Dockerfile.convex
+      args:
+        # Public URLs baked into the browser bundle at build time.
+        NEXT_PUBLIC_CONVEX_URL: ${NEXT_PUBLIC_CONVEX_URL:-http://127.0.0.1:3210}
+        CONVEX_URL: ${CONVEX_URL:-http://backend:3210}
+        CONVEX_SITE_URL: ${CONVEX_SITE_URL:-http://backend:3211}
+    ports:
+      - '127.0.0.1:${WEB_PORT:-3000}:3000'
+    networks:
+      default: {}
+      edge:
+        aliases:
+          - claims-web
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      # Required for Swarm ingress/LB. Without this, Next may bind to container hostname only.
+      - HOSTNAME=0.0.0.0
+      # Server-side code inside this container should talk to the internal backend.
+      - CONVEX_URL=http://backend:3210
+      - CONVEX_SITE_URL=http://backend:3211
+      # convex deploy from inside the web container must reach the backend service.
+      - CONVEX_SELF_HOSTED_URL=http://backend:3210
+      - CONVEX_SELF_HOSTED_ADMIN_KEY=${CONVEX_SELF_HOSTED_ADMIN_KEY:-}
+      # In Swarm with multiple replicas, avoid concurrent deploy-on-start races.
+      - CONVEX_DEPLOY_ON_START=${CONVEX_DEPLOY_ON_START:-1}
+    depends_on:
+      - backend
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'node',
+          '-e',
+          "fetch('http://' + process.env.HOSTNAME + ':3000/login').then((r)=>process.exit(r.status<500?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 45s
+    labels:
+      # Only this service is auto-updated by watchtower.
+      - com.centurylinklabs.watchtower.enable=true
+      - com.centurylinklabs.watchtower.scope=ai-analytics
+    deploy:
+      replicas: ${WEB_REPLICAS:-1}
+      labels:
+        - com.centurylinklabs.watchtower.enable=true
+        - com.centurylinklabs.watchtower.scope=ai-analytics
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+        failure_action: rollback
+      rollback_config:
+        parallelism: 1
+        order: stop-first
+      restart_policy:
+        condition: any
+        delay: 5s
+
+    # If you need local debugging, uncomment:
+    # restart: unless-stopped
+
+networks:
+  default:
+  # Shared proxy network — created by ai-ana-proxy stack. `external: true` means
+  # this compose won't try to create it; the proxy owns its lifecycle.
+  edge:
+    external: true
+
+volumes:
+  data:
+  postgres-data:

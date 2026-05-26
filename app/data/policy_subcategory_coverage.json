@@ -1,0 +1,86 @@
+{
+  "subCategoryCoverage": {
+    "Accommodation Charges": {
+      "covered": true,
+      "percent": 1,
+      "applyPercentIfSumInsuredLte": 500000
+    },
+    "ICU Charges": {
+      "covered": true,
+      "percent": 2,
+      "applyPercentIfSumInsuredLte": 500000
+    },
+    "Room Rent": {
+      "covered": true,
+      "percent": 1,
+      "applyPercentIfSumInsuredLte": 500000
+    },
+    "Nursing Charges": {
+      "covered": true,
+      "proportionateTo": "Room Rent",
+      "proportionateIfSumInsuredLte": 500000
+    },
+    "Doctor / Surgeon Fees": {
+      "covered": true
+    },
+    "Medicines (Hospital)": {
+      "covered": true
+    },
+    "Medicines (External)": {
+      "covered": true
+    },
+    "Consumables": {
+      "covered": true
+    },
+    "Diagnostics / Imaging": {
+      "covered": true
+    },
+    "Implants": {
+      "covered": true
+    },
+    "Ambulance": {
+      "covered": true
+    },
+    "F & B": {
+      "covered": false
+    },
+    "Telephone": {
+      "covered": false
+    },
+    "Registration / File Charges": {
+      "covered": false
+    },
+    "Service Charges / Tax": {
+      "covered": false
+    },
+    "DMO/RMO Charges": true,
+    "Surgeon/Physician": true,
+    "Assistant Surgeon": true,
+    "Anaesthetist": true,
+    "Consultation": true,
+    "Medicines Supplied By Hospital": true,
+    "Medicines From Shop": true,
+    "Radiation Therapy": true,
+    "Blood/Blood components": true,
+    "Labs/Bio/Micro/Pathology/Immuno/Histo/Cyto chemistry": true,
+    "Imageology": true,
+    "Procedures": true,
+    "Miscellaneous": false,
+    "Others": false,
+    "File / Admission": false,
+    "Disposables": false,
+    "Registration": false,
+    "Transportation": false,
+    "Casualty / emergency chrgs": true,
+    "OT Charges": true,
+    "OT Consumables": true,
+    "Anaesthesia gas": true,
+    "Instrument Charges": true,
+    "Oxygen": true,
+    "Nebulizor": true,
+    "Ventilator": true,
+    "Pulse oxy": true,
+    "Physiotherapy": true,
+    "Donor Charges": true
+  }
+}
