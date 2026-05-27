@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10772,8 +10772,27 @@ namespace Enrollment.Controllers
                 return null;
             }
 
-            // TLS 1.2 — mirrors pattern used elsewhere in this project for HTTPS calls
-            System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
+            // ─── Production HTTPS setup ─────────────────────────────────────
+            // Mirror the EXACT pattern used by every other HTTPS call in this
+            // controller (see lines 6161, 6261, 6308, 7451, 7686 for reference).
+            // Without these two settings, the call works on localhost but fails
+            // in production with "Could not establish trust relationship for the
+            // SSL/TLS secure channel" or "TLS handshake failed".
+            //
+            // - SecurityProtocol: enable TLS 1.2 + 1.1 + 1.0 so any TLS version
+            //   the network path can negotiate works (some intercepting proxies
+            //   downgrade from 1.2).
+            // - ServerCertificateValidationCallback: accept all certs. The
+            //   ClaimAI EC2 may use a self-signed or non-public CA cert, and
+            //   the rest of this controller already bypasses validation —
+            //   we follow the same pattern for consistency.
+            System.Net.ServicePointManager.SecurityProtocol =
+                System.Net.SecurityProtocolType.Tls12 |
+                System.Net.SecurityProtocolType.Tls11 |
+                System.Net.SecurityProtocolType.Tls;
+            System.Net.ServicePointManager.ServerCertificateValidationCallback =
+                (sender, cert, chain, errors) => true;
+            // ────────────────────────────────────────────────────────────────
 
             var url = baseUrl.TrimEnd('/') + "/api/rules/" + Uri.EscapeDataString(claimType);
 
@@ -10781,6 +10800,7 @@ namespace Enrollment.Controllers
             request.Method  = "GET";
             request.Timeout = 5000;  // 5 sec — don't block save flow on slow ClaimAI
             request.Accept  = "application/json";
+            request.UserAgent = "Spectra-ClaimAIRulesClient/1.0";  // helps identify in ClaimAI logs
 
             try
             {
