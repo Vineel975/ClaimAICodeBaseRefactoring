@@ -29,6 +29,7 @@ const CORS_HEADERS = {
   "Access-Control-Allow-Origin":  "*",
   "Access-Control-Allow-Methods": "GET, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Max-Age":       "86400",  // Cache preflight for 24 hours — matches pattern in classify-claim-type/route.ts
 } as const;
 
 const CACHE_HEADERS = {
